@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Devopps Enterprise Limited</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="icon/brand_icon.png" type="image/gif">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="/js/myScript.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class=" w3-bar topnav w3-black w3-wide w3-padding w3-card">
+                <div>
+                    <a href="#home" class=""><img class="brand-logo" src="images/logo_transparent_background.png"
+                            alt="#"></a>
+                </div>
+
+                <!-- Float links to the right. Hide them on small screens -->
+                <a href="javascript:void(0);" class="icon w3-xxlarge" onclick="myFunction()" id="menuIcon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="w3-right w3-hide-small menu-item" id="myTopnav" onclick="closeSidebar()">
+                    <a href="#home" class="w3-bar-item w3-button w3-mobile ">Home</a>
+                    <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+                    <a href="#products" class="w3-bar-item w3-button w3-mobile">Products</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide padding-main" style="max-width:1500px;" id="home">
+        <div class="w3-row-padding">
+            <div class="w3-display-container w3-wide w3-padding ">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="w3-image " src="images/poultry_farm.jpeg" alt=" " width="100%">
+                            height="800px">
+                            <div class="carousel-caption">
+                                <h3>Layer Birds</h3>
+                                <p>Poultry Farm Unit</p>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <img class="w3-image " src="images/piggery1.jpeg" alt=" " width="100%">
+                            height="800px">
+                            <div class="carousel-caption">
+                                <h3>Sow with Pigglets</h3>
+                                <p>Piggery Farm Unit</p>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <img class="w3-image" src="images/tomatoes_farm.jpeg" alt=" " width="100%">
+                            height="800px">
+                            <div class="carousel-caption">
+                                <h3>Tomatoes Farm</h3>
+                                <p>Crops Farm Unit</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+        
+
+        <!-- About content -->
+        <div class="w3-display-container w3-content w3-padding-32 mobileContent" style="max-width:1564px">
+            <div class="w3-container w3-padding-64 " id="about">
+                <div class="w3-row w3-padding-64 w3-row-padding">
+                    <div class="w3-col m6 w3-padding-large w3-hide-small">
+                        <img src="/images/about_img.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting"
+                            width="600" height="750">
+                    </div>
+
+                    <div class="w3-col m6 w3-padding-large">
+                        <div>
+                            <h1 class="w3-center">About Devopps</h1><br>
+                            <!-- <h5 class="w3-center">Tradition since 1889</h5> -->
+                            <p class="w3-large">Devopps Enterprise Limited is an integrated farm with multiple farm
+                                units working together to address food access, engage and inspire individual, and create
+                                economic opportunities to improve the standard of life in the communities. Our diverse
+                                farm reflects our belief that a multifaceted approach is needed to address food
+                                insecurity in the 21st.
+                                century.</p>
+                        </div>
+                        <div>
+                            <h1 class="w3-center">Our Vision</h1><br>
+                            <p class="w3-large">Our mission is to grow food, create economic opportunities to improve
+                                the health
+                                and well-being of our community and future
+                                generations.</p>
+                        </div>
+                        <div>
+                            <h1 class="w3-center">Our Mission</h1><br>
+                            <p class="w3-large">We aspire to develop an innovative and sustainable agricultural
+                                enterprise where we produce high-quality food and
+                                products for our customers and create economic opportunities to improve the health and
+                                well-being of our community and
+                                future generations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Section -->
+            <div class="w3-container w3-padding-64" id="products">
+                <div class="w3-container w3-padding-32 mobileContent">
+                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Products</h3>
+                </div>
+
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Fresh Tomatoes</div>
+                            <img src="images/tomatoes1.jpeg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Fresh Cucumbers</div>
+                            <img src="images/cucumber1.jpeg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Fresh Garden Eggs</div>
+                            <img src="images/garden_eggs1.jpeg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Fresh Okra</div>
+                            <img src="images/okra.jpeg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Fresh Eggs</div>
+                            <img src="images/eggs1.jpeg" alt="House" style="width:99%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Mushrooms</div>
+                            <img src="images/mushrooms1.jpeg" alt="House" style="width:99%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Eggplants</div>
+                            <img src="images/eggplant1.jpeg" alt="House" style="width:99%">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <div class="w3-display-topleft w3-black w3-padding">Table Size Fish</div>
+                            <img src="images/table_size_fish.jpeg" alt="House" style="width:99%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Section -->
+            <div class="w3-container w3-padding-64 mobileContent" id="contact">
+                <div class="w3-container w3-padding-32">
+                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+                </div>
+                <div class="w3-row-padding">
+                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                    <form action="/action_page.php" target="_blank">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required
+                            name="Email">
+                        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required
+                            name="Subject">
+                        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required
+                            name="Comment">
+                        <button class="w3-button w3-black w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Image of location/map -->
+            <div class="w3-container">
+                <!-- <img src="https://unsplash.it/1500/800" class="w3-image" style="width:100%"> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-16">
+            <p>Devopps Enterprise Limited <a href="#home" title="Visit w3schools">www.devoppsng.com</a>
+            </p>
+        </footer>
+
+    </body>
+
+</html>
