@@ -15,17 +15,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="/js/myScript.js"></script>
+
     </head>
 
     <body>
 
         <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class=" w3-bar topnav w3-black w3-wide w3-padding w3-card">
+        <div id="navContainer" class="w3-top nav-back" scrollTop()="goHome()">
+            <div id="navInner" class=" w3-bar w3-black topnav w3-wide w3-padding w3-card ">
                 <div>
                     <a class=""><img class="brand-logo" src="images/logo_transparent_background.png" alt="#"
-                            onclick="goHome()"></a>
+                            onclick="goHome()" style="opacity: 1;"></a>
                 </div>
 
                 <!-- Float links to the right. Hide them on small screens -->
@@ -42,64 +42,66 @@
         </div>
 
         <!-- Header -->
-        <header class="w3-display-container w3-content w3-wide padding-main" style="max-width:1500px;" id="home">
-            <div class="w3-row-padding">
-                <div class="w3-display-container w3-wide w3-padding ">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
+        <header class="" style="" id="home" scrollTop()="goHome()">
+            <!-- <div class=""> -->
+            <div class="w3-display-container w3-wide">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="w3-image " src="images/poultry_farm.jpeg" alt=" " width="100%"
-                                    height="800px">
-                                <div class="carousel-caption">
-                                    <h3>Layer Birds</h3>
-                                    <p>Poultry Farm Unit</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img class="w3-image " src="images/piggery1.jpeg" alt=" " width="100%" height="800px">
-                                <div class="carousel-caption">
-                                    <h3>Sow with Pigglets</h3>
-                                    <p>Piggery Farm Unit</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img class="w3-image" src="images/tomatoes_farm.jpeg" alt=" " width="100%"
-                                    height="800px">
-                                <div class="carousel-caption">
-                                    <h3>Tomatoes Farm</h3>
-                                    <p>Crops Farm Unit</p>
-                                </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="w3-image w3-animate-fading" src="images/poultry_farm.jpeg" alt=" " width="100%"
+                                height="800px">
+                            <div class="carousel-caption">
+                                <h3>Layer Birds</h3>
+                                <p>Poultry Farm Unit</p>
                             </div>
                         </div>
 
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
+                        <div class="item">
+                            <img class="w3-image w3-animate-fading" src="images/piggery2.jpeg" alt=" " width="100%"
+                                height="800px">
+                            <div class="carousel-caption">
+                                <h3>Sow with Pigglets</h3>
+                                <p>Piggery Farm Unit</p>
+                            </div>
+                        </div>
 
+                        <div class="item">
+                            <img class="w3-image w3-animate-fading" src="images/tomatoes_farm.jpeg" alt=" " width="100%"
+                                height="800px">
+                            <div class="carousel-caption">
+                                <h3>Tomatoes Farm</h3>
+                                <p>Crops Farm Unit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
+
+            <!-- </div> -->
         </header>
 
 
         <!-- About content -->
-        <div class="w3-display-container w3-content w3-padding-32 mobileContent" style="max-width:1564px">
+        <div class="w3-display-container w3-content w3-padding-32 mobileContent" style="max-width:1564px"
+            scrollTop()="goAbout()">
             <div class="w3-container w3-padding-64 " id="about">
                 <div class="w3-row w3-padding-64 w3-row-padding">
                     <div class="w3-col m6 w3-padding-large w3-hide-small">
@@ -136,8 +138,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Project Section -->
-            <div class="w3-container w3-padding-64" id="products">
+            <!-- Prudocts Section -->
+            <div class="w3-container w3-padding-64" id="products" scrollTop()="goProducts()">
                 <div class="w3-container w3-padding-32 mobileContent">
                     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Products</h3>
                 </div>
@@ -199,7 +201,7 @@
 
 
             <!-- Contact Section -->
-            <div class="w3-container w3-padding-64 mobileContent" id="contact">
+            <div class="w3-container w3-padding-64 mobileContent" id="contact" scrollTop()="goContact()">
                 <div class="w3-container w3-padding-32">
                     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
                 </div>
@@ -239,11 +241,7 @@
             </p>
         </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="/js/myScript.js"></script>
 
     </body>
 
