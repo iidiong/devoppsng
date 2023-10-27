@@ -2094,4 +2094,7 @@ a {
     font-size: 17px;
     background-color: lightgrey;
   }
+  .paddingImage {
+    padding-top: 85px;
+  }
 }

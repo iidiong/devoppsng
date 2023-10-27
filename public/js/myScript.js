@@ -29,7 +29,7 @@ function goHome() {
     // navContainer.classList.add("nav-back");
     // navInner.classList.remove("w3-black");
     // brandLogo.style.opacity = "1";
-   
+
 }
 function goAbout() {
     document.getElementById("about").scrollIntoView()
