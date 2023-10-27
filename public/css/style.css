@@ -18,6 +18,7 @@ html {
 
 body {
   margin: 0;
+  margin-top: 50px;
 }
 
 article,
@@ -2045,6 +2046,9 @@ a {
 .nav-back {
   background: transparent;
 }
+header {
+  padding-top: 25px;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -2081,7 +2085,7 @@ a {
     /* padding-bottom: 20px; */
   }
   .brand-logo {
-    height: 40px;
+    height: 48px;
     position: relative;
     display: inline-block;
     margin: 0;
@@ -2094,7 +2098,7 @@ a {
     font-size: 17px;
     background-color: lightgrey;
   }
-  .paddingImage {
-    padding-top: 85px;
+  header {
+    padding-top: 75px;
   }
 }
