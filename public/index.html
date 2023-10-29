@@ -22,10 +22,10 @@
 
         <!-- Navbar (sit on top) -->
         <div id="navContainer" class="w3-top nav-back" scrollTop()="goHome()">
-            <div id="navInner" class=" w3-bar w3-black topnav w3-wide w3-padding w3-card ">
+            <div id="navInner" class=" w3-bar  topnav w3-wide w3-padding ">
                 <div>
-                    <a class=""><img class="brand-logo" src="images/logo_transparent_background.png" alt="#"
-                            onclick="goHome()" style="opacity: 1;"></a>
+                    <a class=""><img id="brandLogo" class="brand-logo" src="images/logo_transparent_background.png"
+                            alt="#" onclick="goHome()"></a>
                 </div>
 
                 <!-- Float links to the right. Hide them on small screens -->
@@ -44,7 +44,7 @@
 
 
         <!-- Header -->
-        <header class="w3-display-container" style="" id="home" scrollTop()="goHome()">
+        <header class="w3-display-container" style="" id="home">
             <!-- <div class="w3-row-padding"> -->
             <!-- <div class=""> -->
             <div class="w3-display-container w3-wide">
@@ -60,7 +60,7 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner paddingImage">
                         <div class="item active">
-                            <img class="w3-image w3-animate-fading" src="images/poultry_farm.jpeg" alt=" " width="100%"
+                            <img class="w3-image w3-animate-opacity" src="images/poultry_farm.jpeg" alt=" " width="100%"
                                 height="800px">
                             <div class="carousel-caption">
                                 <h3>Layer Birds</h3>
@@ -69,8 +69,7 @@
                         </div>
 
                         <div class="item">
-                            <img class="w3-image w3-animate-fading" src="images/piggery2.jpeg" alt=" " width="100%"
-                                height="800px">
+                            <img class="w3-image" src="images/piggery2.jpeg" alt=" " width="100%" height="800px">
                             <div class="carousel-caption">
                                 <h3>Sow with Pigglets</h3>
                                 <p>Piggery Farm Unit</p>
@@ -78,16 +77,14 @@
                         </div>
 
                         <div class="item">
-                            <img class="w3-image w3-animate-fading" src="images/tomatoes_farm.jpeg" alt=" " width="100%"
-                                height="800px">
+                            <img class="w3-image" src="images/tomatoes_farm.jpeg" alt=" " width="100%" height="800px">
                             <div class="carousel-caption">
                                 <h3>Tomatoes Farm</h3>
                                 <p>Crops Farm Unit</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="w3-image w3-animate-fading" src="images/fishpond1.jpeg" alt=" " width="100%"
-                                height="800px">
+                            <img class="w3-image" src="images/fishpond1.jpeg" alt=" " width="100%" height="800px">
                             <div class="carousel-caption">
                                 <h3>Juvenile Catfish</h3>
                                 <p>Fishery Farm Unit</p>
@@ -123,7 +120,7 @@
 
                     <div class="w3-col m6 w3-padding-large">
                         <div>
-                            <h1 class="w3-center">About Devopps</h1><br>
+                            <h1 class="w3-center brand-color">About Devopps</h1><br>
                             <!-- <h5 class="w3-center">Tradition since 1889</h5> -->
                             <p class="w3-large">Devopps Enterprise Limited is an integrated farm with multiple farm
                                 units working together to address food access, engage and inspire individual, and create
@@ -133,14 +130,14 @@
                                 century.</p>
                         </div>
                         <div>
-                            <h1 class="w3-center">Our Vision</h1><br>
+                            <h1 class="w3-center brand-color">Our Mission</h1><br>
                             <p class="w3-large">Our mission is to grow food, create economic opportunities to improve
                                 the health
                                 and well-being of our community and future
                                 generations.</p>
                         </div>
                         <div>
-                            <h1 class="w3-center">Our Mission</h1><br>
+                            <h1 class="w3-center brand-color">Our Vision</h1><br>
                             <p class="w3-large">We aspire to develop an innovative and sustainable agricultural
                                 enterprise where we produce high-quality food and
                                 products for our customers and create economic opportunities to improve the health and
@@ -153,7 +150,7 @@
             <!-- Prudocts Section -->
             <div class="w3-container w3-padding-64" id="products" scrollTop()="goProducts()">
                 <div class="w3-container w3-padding-32 mobileContent">
-                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Products</h3>
+                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 brand-color">Products</h3>
                 </div>
 
                 <div class="w3-row-padding">
@@ -216,7 +213,7 @@
                 <div class="w3-container w3-padding-top-64 mobileContent">
                     <div class="w3-row w3-container">
                         <div class="w3-half w3-grey w3-container w3-center" style="height:700px">
-                            <div class="w3-padding-64">
+                            <div class="w3-padding-48">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
                                     width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
@@ -225,20 +222,21 @@
                         </div>
                         <div class="w3-half w3-gray w3-container" style="height:700px">
                             <div class="w3-padding-32 w3-padding-large">
-                                <h3>Contact</h3>
+                                <h3 class="band-color">Contact</h3>
                                 <div class="w3-padding-16">
                                     <p class="w3-opacity">Contact us and we'll get back to you within 24 hours</p>
-                                    <i class="fa fa-map-marker fa-lg w3-text-black" style="width:30px"></i>
-                                    <span style="width:30px">Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
-                                    <span>&emsp;&emsp;&emsp;Essien Udim L.G.A,</span><br>
-                                    <span>&emsp;&emsp;&emsp;Akwa Ibom State.</span><br>
-                                    <span>&emsp;&emsp;&emsp;Nigeria</span></br>
-                                    <i class="fa fa-phone fa-lg w3-text-black" style="width:30px"></i> Phone:
-                                    0916-783-2992<br>
-                                    <i class="fa fa-envelope fa-lg w3-text-black" style="width:30px"> </i> Email:
-                                    devoppsenterpriseltd@gmail.com<br>
+                                    <p><i class="fa fa-map-marker fa-lg w3-text-black" style="width:30px"></i>
+                                        <span style="width:30px">Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
+                                        <span>&emsp;&emsp;&emsp;Essien Udim L.G.A,</span><br>
+                                        <span>&emsp;&emsp;&emsp;Akwa Ibom State.</span><br>
+                                        <span>&emsp;&emsp;&emsp;Nigeria</span></br>
+                                    </p>
+                                    <p><i class="fa fa-phone fa-lg w3-text-black" style="width:30px"></i> Phone:
+                                        0916-783-2992<br></p>
+                                    <p><i class="fa fa-envelope fa-lg w3-text-black" style="width:30px"> </i> Email:
+                                        devoppsenterpriseltd@gmail.com<br></p>
                                 </div>
-                                <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php"
+                                <form class="w3-container w3-card w3-padding-16 w3-white" action="/action_page.php"
                                     target="_blank">
                                     <div class="w3-section">
                                         <label>Name</label>

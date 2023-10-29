@@ -22,32 +22,46 @@ function closeSidebar() {
 }
 let navContainer = document.getElementById("navContainer");
 let navInner = document.getElementById("navInner");
-let brandLogo = document.getElementsByClassName("brand-logo");
+let brandLogo = document.getElementById("brandLogo");
 
 function goHome() {
-    document.getElementById("home").scrollIntoView()
-    // navContainer.classList.add("nav-back");
-    // navInner.classList.remove("w3-black");
-    // brandLogo.style.opacity = "1";
+    document.getElementById("home").scrollIntoView();
 
 }
 function goAbout() {
-    document.getElementById("about").scrollIntoView()
-    // navInner.classList.add("w3-black");
-    // navInner.style.opacity = "0.5";
-    // brandLogo.style.opacity = "1";
+    document.getElementById("about").scrollIntoView();
 }
 function goProducts() {
-    document.getElementById("products").scrollIntoView()
-    // navInner.classList.add("w3-black");
-    // navInner.style.opacity = "0.5";
-    // brandLogo.style.opacity = "1";
+    document.getElementById("products").scrollIntoView();
 }
 function goContact() {
-    document.getElementById("contact").scrollIntoView()
-    // navInner.classList.add("w3-black");
-    // navInner.style.opacity = "0.5";
-    // brandLogo.style.opacity = "1";
+    document.getElementById("contact").scrollIntoView();
 }
 
 
+window.onscroll = function () { runOnscroll() };
+
+function runOnscroll() {
+    if (window.innerWidth > 600) {
+        if (document.documentElement.scrollTop > 900) {
+            navInner.classList.add("w3-black");
+            // navInner.style.opacity = "0.5";
+            brandLogo.style.opacity = "1";
+
+        } else {
+            navContainer.classList.add("nav-back");
+            navInner.classList.remove("w3-black");
+            brandLogo.style.opacity = "1";
+        }
+    } else {
+        if (document.documentElement.scrollTop > 245) {
+            navInner.classList.add("w3-black");
+            // navInner.style.opacity = "0.5";
+            brandLogo.style.opacity = "1";
+        } else {
+            navContainer.classList.add("nav-back");
+            navInner.classList.remove("w3-black");
+            brandLogo.style.opacity = "1";
+        }
+    }
+}

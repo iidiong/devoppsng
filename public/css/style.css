@@ -1503,7 +1503,9 @@ a {
 
 .w3-button:hover {
   color: #000 !important;
-  background-color: #ccc !important;
+  /* background-color: #ccc !important; */
+  background-color: #47d7ac !important;
+  background-color: #fff !important;
 }
 
 .w3-transparent,
@@ -2047,7 +2049,7 @@ a {
   background: transparent;
 }
 header {
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 .brand-color {
   color: #47d7ac;
@@ -2104,6 +2106,6 @@ header {
     background-color: lightgrey;
   }
   header {
-    padding-top: 90px;
+    /* padding-top: 90px; */
   }
 }
