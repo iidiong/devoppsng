@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
   margin-top: 50px;
+  padding: 0px;
 }
 
 article,
@@ -224,6 +225,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 1.5;
+  /* background-color: #f6f9f9 !important; */
 }
 
 html {
@@ -2057,6 +2059,21 @@ header {
 .brand-color-bgr {
   background-color: #47d7ac;
 }
+.about-section {
+  /* background-color: #50a684; */
+  padding-bottom: 70px;
+}
+.products-section {
+  background-color: #dbc8b6;
+  padding-bottom: 130px;
+}
+.contact-section {
+  background-color: #004c45;
+  /* padding-bottom: 48px; */
+}
+/* .padding-bottom {
+  padding-bottom: 64px;
+} */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   /* .topnav a:not(:first-child) {display: none;} */
