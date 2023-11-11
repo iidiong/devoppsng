@@ -65,3 +65,23 @@ function runOnscroll() {
         }
     }
 }
+
+
+window.onload = function () {
+    var span = document.createElement('span');
+
+    span.className = 'fa';
+    span.style.display = 'none';
+    document.body.insertBefore(span, document.body.firstChild);
+    document.body.removeChild(span);
+
+    // This code add whatsApp message link to page
+    // (function (d, script) {
+    //     script = d.createElement('script');
+    //     script.type = 'text/javascript';
+    //     script.async = true;
+    //     script.src = 'https://w.app/widget-v1/j6l0GT.js';
+    //     d.getElementsByTagName('head')[0].appendChild(script);
+    // }(document));
+};
+
