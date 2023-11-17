@@ -2026,6 +2026,12 @@ a {
   margin: auto;
   z-index: 1;
 }
+a:link {
+  /* background-color: white; */
+  text-decoration: none;
+ 
+}
+
 
 /* mobile adding */
 
@@ -2050,9 +2056,7 @@ a {
 .nav-back {
   background: transparent;
 }
-header {
-  /* padding-top: 25px; */
-}
+
 .brand-color {
   color: #47d7ac;
 }

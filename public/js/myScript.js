@@ -84,4 +84,3 @@ window.onload = function () {
     //     d.getElementsByTagName('head')[0].appendChild(script);
     // }(document));
 };
-
