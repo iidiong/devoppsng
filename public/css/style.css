@@ -2029,9 +2029,25 @@ a {
 a:link {
   /* background-color: white; */
   text-decoration: none;
- 
+}
+.image-container {
+  position: relative;
 }
 
+.img1 {
+  position: absolute;
+  z-index: 1;
+  width: 55%;
+  top: 0;
+  left: 0;
+}
+.img2 {
+  position: absolute;
+  z-index: 2;
+  width: 55%;
+  top: 300px;
+  left: 300px;
+}
 
 /* mobile adding */
 
