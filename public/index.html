@@ -26,7 +26,6 @@
                     <a class=""><img id="brandLogo" class="brand-logo" src="images/logo_transparent_background.png"
                             alt="#" onclick="goHome()"></a>
                 </div>
-
                 <!-- Float links to the right. Hide them on small screens -->
                 <a href="javascript:void(0);" class="icon w3-xxlarge" onclick="myFunction()" id="menuIcon">
                     <i class="fa fa-bars"></i>
@@ -35,15 +34,15 @@
                     <a class="w3-bar-item w3-button w3-mobile" onclick="goHome()">Home</a>
                     <a class="w3-bar-item w3-button w3-mobile" onclick="goAbout()">About</a>
                     <a class="w3-bar-item w3-button w3-mobile" onclick="goProducts()">Products</a>
+                    <!-- <a class="w3-bar-item w3-button w3-mobile" onclick="goBlog()">Blog</a> -->
                     <a class="w3-bar-item w3-button w3-mobile" onclick="goContact()">Contact</a>
                 </div>
+
             </div>
         </div>
 
         <!-- Header -->
-        <header class="w3-display-container" style="" id="home">
-            <!-- <div class="w3-row-padding"> -->
-            <!-- <div class=""> -->
+        <header class="w3-display-container" id="home">
             <div class="w3-display-container w3-wide">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -123,10 +122,9 @@
 
 
         <!-- About content -->
-        <div class="about-section padding-bottom">
-            <div class="w3-display-container w3-content w3-padding-32 mobileContent" style="max-width:1564px"
-                scrollTop()="goAbout()">
-                <div class="w3-container w3-padding-64 " id="about">
+        <div class="about-section padding-bottom" id="about">
+            <div class="w3-display-container w3-content w3-padding-8" style="max-width:1564px" scrollTop()="goAbout()">
+                <div class="w3-container w3-padding-64 mobile-padding">
                     <div class="w3-row w3-padding-64 w3-row-padding">
                         <div class="w3-col m6 w3-padding-large w3-hide-small image-container">
                             <div class="img1">
@@ -143,23 +141,40 @@
                         <div class="w3-col m6 w3-padding-large">
                             <div>
                                 <h2 class="w3-center brand-color">About Devopps</h2><br>
-                                <h5 class="w3-center">Serving our community since 2021</h5>
-                                <p class="w3-large">Devopps Enterprise Limited is an integrated farm with multiple farm
-                                    units working together to address food access, empower and inspire individual, and
-                                    create
-                                    economic opportunities to improve the standard of life in the communities. Our
-                                    diverse
-                                    farm reflects our belief that a multifaceted approach is needed to address food
-                                    insecurity in the 21st.
-                                    century.</p>
+                                <p class="w3-center">Serving our community since 2021</p>
+                            </div>
+                            <div class="w3-large">
+                                <p>Devopps Enterprise Limited - your gateway to a flourishing agricultural
+                                    experience! At the heart of our
+                                    philosophy lies a commitment to seamlessly integrating livestock and crops. We're
+                                    not just a farm; we're a
+                                    community-driven initiative dedicated to growing and selling high quality
+                                    agricultural products. Why? Because we believe
+                                    that by doing so, we're not only nourishing bodies but also sowing the seeds of
+                                    economic opportunities for our
+                                    community.
+                                </p>
+                                <p>
+                                    Our mission is clear: to create a ripple effect of positive change in the health and
+                                    well-being of our community and
+                                    future generations. Devopps is more than a farm; it's a catalyst for growth. By
+                                    engaging in sustainable farming
+                                    practices, we ensure that every harvest contributes not only to your dinner table
+                                    but also to the prosperity of our
+                                    community.
+                                </p>
+                                <p>
+                                    When you choose Devopps, you're not just choosing fresh produce; you're choosing a
+                                    commitment to health, community, and
+                                    sustainability. Our integrated approach to farming reflects our dedication to
+                                    creating a lasting impact. Join us in
+                                    cultivating not just crops, but a healthier, more vibrant future for our community.
+                                </p>
                             </div>
                             <div>
                                 <h2 class="w3-center brand-color">Our Mission</h2><br>
                                 <p class="w3-large">Our mission is to grow food, create economic opportunities to
-                                    improve
-                                    the health
-                                    and well-being of our community and future
-                                    generations.</p>
+                                    improve the health and well-being of our community and future generations.</p>
                             </div>
                             <div>
                                 <h2 class="w3-center brand-color">Our Vision</h2><br>
@@ -177,7 +192,7 @@
         </div>
         <!-- Prudocts Section -->
         <div class="products-section padding-bottom">
-            <div class="w3-display-container w3-content w3-padding-32" style=" max-width:1564px" id="products"
+            <div class="w3-display-container w3-content w3-padding-32 " style=" max-width:1564px" id="products"
                 scrollTop()="goProducts()">
                 <div class="w3-container w3-padding-64">
                     <div class="w3-container w3-padding-32 mobileContent">
