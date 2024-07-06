@@ -2025,6 +2025,7 @@ a {
   height: 800px;
   margin: auto;
   z-index: 1;
+  padding-top: 58px;
 }
 a:link {
   /* background-color: white; */

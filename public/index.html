@@ -9,9 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <meta name="referrer" content="strict-origin" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,25 +18,27 @@
     <body>
 
         <!-- Navbar (sit on top) -->
-        <div id="navContainer" class="w3-top nav-back" scrollTop()="goHome()">
-            <div id="navInner" class=" w3-bar  topnav w3-wide w3-padding">
-                <div>
-                    <a class=""><img id="brandLogo" class="brand-logo" src="images/logo_transparent_background.png"
-                            alt="#" onclick="goHome()"></a>
-                </div>
-                <!-- Float links to the right. Hide them on small screens -->
-                <a href="javascript:void(0);" class="icon w3-xxlarge" onclick="myFunction()" id="menuIcon">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="w3-right w3-hide-small menu-item " id="myTopnav" onclick="closeSidebar()">
-                    <a class="w3-bar-item w3-button w3-mobile" onclick="goHome()">Home</a>
-                    <a class="w3-bar-item w3-button w3-mobile" onclick="goAbout()">About</a>
-                    <a class="w3-bar-item w3-button w3-mobile" onclick="goProducts()">Products</a>
-                    <!-- <a class="w3-bar-item w3-button w3-mobile" onclick="goBlog()">Blog</a> -->
-                    <a class="w3-bar-item w3-button w3-mobile" onclick="goContact()">Contact</a>
-                </div>
-
+        <div class="w3-top">
+            <a href="/"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
+                    src="images/logo_transparent_background.png" alt="#" onclick="goHome()"></a>
+            <div class="w3-right about-section w3-black w3-padding w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+                <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
             </div>
+        </div>
+
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+            style="margin-top:46px">
+            <a href="/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+            <a href="#products" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
         </div>
 
         <!-- Header -->
@@ -56,7 +56,7 @@
                     </ol>
 
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner paddingImage">
+                    <div class="carousel-inner">
                         <div class="item active">
                             <img class="w3-image w3-animate-opacity" src="images/catfish1.jpeg" alt=" " width="100%"
                                 height="825px">
@@ -116,83 +116,60 @@
                     </a>
                 </div>
             </div>
-            </div>
-            <!-- </div> -->
         </header>
 
 
         <!-- About content -->
-        <div class="about-section padding-bottom" id="about">
+        <div class="about-section" id="about">
             <div class="w3-display-container w3-content w3-padding-8" style="max-width:1564px" scrollTop()="goAbout()">
                 <div class="w3-container w3-padding-64 mobile-padding">
-                    <div class="w3-row w3-padding-64 w3-row-padding">
-                        <div class="w3-col m6 w3-padding-large w3-hide-small image-container">
-                            <div class="img1">
-                                <img src="/images/pawpaw1.jpeg" class="w3-round w3-image w3-opacity-min"
-                                    alt="Table Setting" width="600" height="750">
-                            </div>
-                            <div class="img2">
-                                <img src="/images/pinapple1.jpeg" class="w3-round w3-image w3-opacity-min"
-                                    alt="Table Setting" width="600" height="750">
-                            </div>
+                    <div class="w3-row w3-padding-32 w3-row-padding">
+                        <div class="w3-col m6 w3-padding-small">
+                            <img src="/images/pawpaw1.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting"
+                                width="98%" height="750">
                         </div>
 
 
-                        <div class="w3-col m6 w3-padding-large">
+                        <div class="w3-col m6 w3-padding-small">
                             <div>
-                                <h2 class="w3-center brand-color">About Devopps</h2><br>
-                                <p class="w3-center">Serving our community since 2021</p>
+                                <h2 class="w3-text-black">About Us</h2>
+                                <p class="">Serving our community since 2021</p>
                             </div>
                             <div class="w3-large">
-                                <p>Devopps Enterprise Limited - your gateway to a flourishing agricultural
-                                    experience! At the heart of our
-                                    philosophy lies a commitment to seamlessly integrating livestock and crops. We're
-                                    not just a farm; we're a
-                                    community-driven initiative dedicated to growing and selling high quality
-                                    agricultural products. Why? Because we believe
-                                    that by doing so, we're not only nourishing bodies but also sowing the seeds of
-                                    economic opportunities for our
-                                    community.
-                                </p>
-                                <p>
-                                    Our mission is clear: to create a ripple effect of positive change in the health and
-                                    well-being of our community and
-                                    future generations. Devopps is more than a farm; it's a catalyst for growth. By
-                                    engaging in sustainable farming
-                                    practices, we ensure that every harvest contributes not only to your dinner table
-                                    but also to the prosperity of our
-                                    community.
+                                <p>Devopps Enterprise Limited is an integrated crops and
+                                    livestock farm located in Ukana Ikot Akpabin, Essien Udim, Akwa Ibom, Nigeria. This
+                                    innovative farm combines crop production with raising livestock, fostering a
+                                    sustainable agricultural approach to create economic opportunities to improve the
+                                    well-being of the community.
                                 </p>
                                 <p>
                                     When you choose Devopps, you're not just choosing fresh produce; you're choosing a
-                                    commitment to health, community, and
-                                    sustainability. Our integrated approach to farming reflects our dedication to
-                                    creating a lasting impact. Join us in
-                                    cultivating not just crops, but a healthier, more vibrant future for our community.
-                                </p>
+                                    commitment to health, community, and sustainability. Our integrated approach to
+                                    farming reflects our dedication to creating a lasting impact. Join us in cultivating
+                                    not just crops, but a healthier, more vibrant future for our community.
+                                </p><br>
                             </div>
                             <div>
-                                <h2 class="w3-center brand-color">Our Mission</h2><br>
-                                <p class="w3-large">Our mission is to grow food, create economic opportunities to
-                                    improve the health and well-being of our community and future generations.</p>
+                                <h2 class="w3-text-black">Our Mission</h2>
+                                <p class="w3-large">We are dedicated to producing affordable quality agricultural
+                                    products year-round to our customers.</p><br>
                             </div>
                             <div>
-                                <h2 class="w3-center brand-color">Our Vision</h2><br>
-                                <p class="w3-large">We aspire to develop an innovative and sustainable agricultural
-                                    enterprise where we produce high-quality food and
-                                    products for our customers and create economic opportunities to improve the health
-                                    and
-                                    well-being of our community and
-                                    future generations.</p>
+                                <h2 class="w3-text-black">Our Vision</h2>
+                                <p class="w3-large">Our vision is to be an innovative agricultural enterprise that
+                                    combines natural resources and technology to produce quality products in a
+                                    sustainable
+                                    way to meet the demands of the current and future generations.</p><br>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Prudocts Section -->
-        <div class="products-section padding-bottom">
-            <div class="w3-display-container w3-content w3-padding-32 " style=" max-width:1564px" id="products"
+        <div class="products-section ">
+            <div class="w3-display-container w3-content " style=" max-width:1564px" id="products"
                 scrollTop()="goProducts()">
                 <div class="w3-container w3-padding-64">
                     <div class="w3-container w3-padding-32 mobileContent">
@@ -256,93 +233,98 @@
         </div>
         <!-- Contact Section -->
         <div class="contact-section">
-            <div class="w3-display-container w3-content w3-padding-32" style="max-width:1564px" id="contact"
+            <div class="w3-display-container w3-content" style="max-width:1564px" id="contact"
                 scrollTop()="goContact()">
-                <div class=" w3-padding-top-32">
+                <!-- <div class=" w3-padding-top-32"> -->
+                <div class="w3-container w3-padding-top-32">
                     <div class="w3-container w3-padding-top-64 mobileContent">
-                        <div class="w3-row w3-container">
-                            <div class="w3-half w3-container w3-center" style="height:700px">
-                                <div class="w3-padding-48">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
-                                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2 class="w3-text-black">Contact</h2>
+                    </div>
+                    <div class="w3-row w3-display-container w3-row-padding">
+                        <!-- <div class="w3-row-padding"> -->
+                        <div class="w3-half w3-container" style="height:700px; background-color: w3-gray;">
+
+                            <div class="w3-padding-36 w3-padding-small w3-text-white">
+
+                                <div class="w3-padding-16 w3-text-white">
+                                    <p class="w3-opacity">Contact us and we'll get back to you within 24 hours
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-map-marker fa-lg" aria-hidden="true" style="width:30px"></i>
+                                        <span>Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
+                                        <span style="margin-left:34px"> Essien Udim L.G.A,</span><br>
+                                        <span style="margin-left:34px"> Akwa Ibom State,</span><br>
+                                        <span style="margin-left:34px">Nigeria.</span><br>
+                                    </p>
+                                    <p><i class="fa fa-phone fa-lg" aria-hidden="true" style="
+                                                width:30px"></i>&ensp;<a class="w3-text-white"
+                                            href="tel:+2349167832992">+234 (0)916 783
+                                            2992</a><br></p>
+                                    <p><i class="fa fa-whatsapp fa-lg" aria-hidden="true" style="
+                                                width:30px"></i>&ensp;<a class="w3-text-white"
+                                            href="https://api.whatsapp.com/send?phone=2349167832992"
+                                            target="_blank">Send
+                                            WhatsApp Message</a><br></p>
+                                    <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:30px">
+                                        </i>&ensp;<a class="w3-text-white" href="mailto:info@devoppsng.com"
+                                            target="_top">info@devoppsng.com</a><br></p>
                                 </div>
-                            </div>
-                            <div class="w3-half w3-container" style="height:700px; background-color: w3-gray;">
-                                <div class="w3-padding-24 w3-padding-large w3-text-white">
-                                    <h2 class="band-color">Contact</h2>
-                                    <div class="w3-padding-16 w3-text-white">
-                                        <p class="w3-opacity">Contact us and we'll get back to you within 24 hours
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker fa-lg" aria-hidden="true" style="width:30px"></i>
-                                            <span>Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
-                                            <span style="margin-left:34px"> Essien Udim L.G.A,</span><br>
-                                            <span style="margin-left:34px"> Akwa Ibom State,</span><br>
-                                            <span style="margin-left:34px">Nigeria.</span><br>
-                                        </p>
-                                        <p><i class="fa fa-phone fa-lg" aria-hidden="true" style="
-                                                width:30px"></i>&ensp;<a class="w3-text-white"
-                                                href="tel:+2349167832992">+234 (0)916 783
-                                                2992</a><br></p>
-                                        <p><i class="fa fa-whatsapp fa-lg" aria-hidden="true" style="
-                                                width:30px"></i>&ensp;<a class="w3-text-white"
-                                                href="https://api.whatsapp.com/send?phone=2349167832992"
-                                                target="_blank">Send WhatsApp Message</a><br></p>
-                                        <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:30px">
-                                            </i>&ensp;<a class="w3-text-white" href="mailto:info@devoppsng.com"
-                                                target="_top">info@devoppsng.com</a><br></p>
-                                    </div>
-                                    <!-- <form class="w3-container w3-card w3-padding-16" action="/action_page.php"
+                                <!-- <form class="w3-container w3-card w3-padding-16" action="/action_page.php"
                                         target="_blank"> -->
-                                    <form class="w3-container w3-card" action="mailto:info@devoppsng.com" method="post"
-                                        enctype="text/plain">
-                                        <fieldset>
-                                            <div class="w3-section" id="message">
-                                                <label style="width:100%; ">Name
-                                                    <input class="w3-input" type="text" required autocomplete="on"
-                                                        name="Name"></label>
-                                            </div>
-                                            <div class="w3-section">
-                                                <label style="width:100%;">Email
-                                                    <input class="w3-input" type="text" required autocomplete="on"
-                                                        name="Email"></label>
-                                            </div>
-                                            <div class="w3-section w3-text-white">
-                                                <label style="width:100%;">Message <input class="w3-input" type=" text"
-                                                        required autocomplete="on" name="Message" id="message"></label>
-                                            </div>
-                                            <!-- <button type="submit" class="w3-button w3-teal w3-right">Send</button> -->
-                                            <button class="w3-button w3-section w3-right  w3-black" type="submit">
-                                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                            </button>
-                                        </fieldset>
-                                    </form>
-                                </div>
+                                <form class="w3-container w3-card w3-padding-top-32" action="mailto:info@devoppsng.com"
+                                    method="post" enctype="text/plain">
+                                    <fieldset>
+                                        <div class="w3-section" id="message">
+                                            <label style="width:100%; ">Name
+                                                <input class="w3-input" type="text" required autocomplete="on"
+                                                    name="Name"></label>
+                                        </div>
+                                        <div class="w3-section">
+                                            <label style="width:100%;">Email
+                                                <input class="w3-input" type="text" required autocomplete="on"
+                                                    name="Email"></label>
+                                        </div>
+                                        <div class="w3-section w3-text-white">
+                                            <label style="width:100%;">Message <input class="w3-input" type=" text"
+                                                    required autocomplete="on" name="Message" id="message"></label>
+                                        </div>
+                                        <!-- <button type="submit" class="w3-button w3-teal w3-right">Send</button> -->
+                                        <button class="w3-button w3-section w3-right  w3-black" type="submit">
+                                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                                        </button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container w3-center" style="height:700px">
+                            <div class="w3-padding-48">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
+                                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End page content -->
-        <!-- Footer -->
-        <footer class="w3-padding-16 w3-black w3-center w3-footer">
-            <h5>Find Us On</h5>
-            <div class="w3-xlarge w3-padding-16">
-                <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-                <a href="http://www.instagram.com/devoppsenterprise" target="_blank"><i
-                        class="fa fa-instagram w3-hover-opacity fa-lg social"></i></a>
-                <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-                <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-                <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-                <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-            </div>
-            <p>Devopps Enterprise Limited&emsp;<a href="#home" title="Devopps Enterprise Limited">www.devoppsng.com</a>
-            </p>
-        </footer>
-        <script src="/js/myScript.js"></script>
+            <!-- End page content -->
+            <!-- Footer -->
+            <footer class="w3-padding-16 w3-black w3-center w3-footer">
+                <h5>Find Us On</h5>
+                <div class="w3-xlarge w3-padding-16">
+                    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+                    <a href="http://www.instagram.com/devoppsenterprise" target="_blank"><i
+                            class="fa fa-instagram w3-hover-opacity fa-lg social"></i></a>
+                    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+                    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+                    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+                    <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+                </div>
+                <p>Devopps Enterprise Limited&emsp;<a href="#home"
+                        title="Devopps Enterprise Limited">www.devoppsng.com</a>
+                </p>
+            </footer>
+            <script src="/js/myScript.js"></script>
 
     </body>
 
