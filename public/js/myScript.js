@@ -19,7 +19,7 @@ function goContact() {
 }
 
 
-window.onscroll = function () { runOnscroll() };
+// window.onscroll = function () { runOnscroll() };
 
 // function runOnscroll() {
 //     if (window.innerWidth > 600) {
@@ -65,8 +65,8 @@ window.onload = function () {
     // }(document));
 };
 // Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+// var myIndex = 0;
+// carousel();
 
 function carousel() {
     var i;
