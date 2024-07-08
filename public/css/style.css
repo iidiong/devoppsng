@@ -2005,7 +2005,7 @@ a {
 }
 
 .brand-logo {
-  height: 60px;
+  height: 65px;
   position: relative;
   display: inline-block;
   margin: 0;
@@ -2053,15 +2053,7 @@ a:link {
 /* mobile adding */
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -2092,9 +2084,9 @@ a:link {
   background-color: #004c45;
   /* padding-bottom: 48px; */
 }
-/* .padding-bottom {
-  padding-bottom: 64px;
-} */
+.w3-top a {
+  text-decoration: none !important;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   /* .topnav a:not(:first-child) {display: none;} */
@@ -2130,7 +2122,7 @@ a:link {
     /* padding-bottom: 20px; */
   }
   .brand-logo {
-    height: 48px;
+    height: 55px;
     position: relative;
     display: inline-block;
     margin: 0;
@@ -2143,7 +2135,5 @@ a:link {
     font-size: 17px;
     background-color: lightgrey;
   }
-  header {
-    /* padding-top: 90px; */
-  }
+ 
 }
