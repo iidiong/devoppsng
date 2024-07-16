@@ -2049,11 +2049,15 @@ a:link {
   top: 300px;
   left: 300px;
 }
+@media screen and (max-width: 600px) {
+  .products-item-padding {
+    padding-right: 16px;
+  }
+}
 
 /* mobile adding */
 
 /* Style the links inside the navigation bar */
-
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -2135,5 +2139,4 @@ a:link {
     font-size: 17px;
     background-color: lightgrey;
   }
- 
 }
