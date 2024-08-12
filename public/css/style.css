@@ -2022,7 +2022,7 @@ a {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
-  height: 800px;
+  height: 400px;
   margin: auto;
   z-index: 1;
   padding-top: 58px;
@@ -2139,4 +2139,11 @@ a:link {
     font-size: 17px;
     background-color: lightgrey;
   }
+}
+/* Make sure media & text blocks always stack image, then text */ 
+@media screen and (max-width: 600px) { 
+  .mobile-display { 
+    display: flex; 
+    flex-direction: row-reverse; 
+  } 
 }

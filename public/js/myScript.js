@@ -65,8 +65,8 @@ window.onload = function () {
     // }(document));
 };
 // Automatic Slideshow - change image every 4 seconds
-// var myIndex = 0;
-// carousel();
+var myIndex = 0;
+carousel();
 
 function carousel() {
     var i;
