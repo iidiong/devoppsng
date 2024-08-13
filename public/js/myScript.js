@@ -19,34 +19,6 @@ function goContact() {
 }
 
 
-// window.onscroll = function () { runOnscroll() };
-
-// function runOnscroll() {
-//     if (window.innerWidth > 600) {
-//         if (document.documentElement.scrollTop > 900) {
-//             navInner.classList.add("w3-black");
-//             // navInner.style.opacity = "0.5";
-//             // brandLogo.style.opacity = "1";
-
-//         } else {
-//             navContainer.classList.add("nav-back");
-//             navInner.classList.remove("w3-black");
-//             // brandLogo.style.opacity = "1";
-//         }
-//     } else {
-//         if (document.documentElement.scrollTop > 245) {
-//             navInner.classList.add("w3-black");
-//             // navInner.style.opacity = "0.5";
-//             // brandLogo.style.opacity = "1";
-//         } else {
-//             navContainer.classList.add("nav-back");
-//             navInner.classList.remove("w3-black");
-//             // brandLogo.style.opacity = "1";
-//         }
-//     }
-// }
-
-
 window.onload = function () {
     var span = document.createElement('span');
 
@@ -66,7 +38,6 @@ window.onload = function () {
 };
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
-carousel();
 
 function carousel() {
     var i;
