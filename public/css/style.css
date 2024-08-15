@@ -1506,7 +1506,7 @@ a {
 .w3-button:hover {
   color: #000 !important;
   /* background-color: #ccc !important; */
-  background-color: #47d7ac !important;
+  /* background-color: #3f9142 !important; */
   background-color: #fff !important;
 }
 
@@ -2025,7 +2025,7 @@ a {
   height: 400px;
   margin: auto;
   z-index: 1;
-  padding-top: 58px;
+  padding-top: 60px;
 }
 a:link {
   /* background-color: white; */
@@ -2071,10 +2071,10 @@ a:link {
 }
 
 .brand-color {
-  color: #47d7ac;
+  color: #3f9142;
 }
 .brand-color-bgr {
-  background-color: #47d7ac;
+  background-color: #3f9142;
 }
 .about-section {
   /* background-color: #50a684; */
