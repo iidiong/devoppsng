@@ -222,10 +222,13 @@ textarea {
 /* End extract */
 html,
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family: "Archer SSm A", "Archer SSm B", serif !important; */
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 15px;
   line-height: 1.5;
   /* background-color: #f6f9f9 !important; */
+  height: 100%;
 }
 
 html {
@@ -956,6 +959,9 @@ a {
   .w3-auto {
     max-width: 100%;
   }
+  .contact-section {
+    padding: 0 0px !important;
+  }
 }
 
 .w3-top,
@@ -1504,10 +1510,11 @@ a {
 }
 
 .w3-button:hover {
-  color: #000 !important;
+  /* color: #000 !important; */
   /* background-color: #ccc !important; */
-  /* background-color: #3f9142 !important; */
+  color: #3f9142 !important;
   background-color: #fff !important;
+  font-weight: bold !important;
 }
 
 .w3-transparent,
@@ -2005,9 +2012,10 @@ a {
 }
 
 .brand-logo {
-  height: 65px;
+  height: 75px;
   position: relative;
   display: inline-block;
+  padding: auto;
   margin: 0;
 }
 .menu-item {
@@ -2025,7 +2033,6 @@ a {
   height: 400px;
   margin: auto;
   z-index: 1;
-  padding-top: 60px;
 }
 a:link {
   /* background-color: white; */
@@ -2077,15 +2084,15 @@ a:link {
   background-color: #3f9142;
 }
 .about-section {
-  /* background-color: #50a684; */
+  background-color: #f6edd9;
   padding-bottom: 70px;
 }
 .products-section {
-  background-color: #dbc8b6;
+  background-color: #f3fcf2;
   padding-bottom: 130px;
 }
 .contact-section {
-  background-color: #004c45;
+  background-color: #3f9142;
   /* padding-bottom: 48px; */
 }
 .w3-top a {
@@ -2126,9 +2133,10 @@ a:link {
     /* padding-bottom: 20px; */
   }
   .brand-logo {
-    height: 55px;
+    height: 70px;
     position: relative;
     display: inline-block;
+    padding-top: 15px;
     margin: 0;
   }
   .topnav .w3-mobile {
@@ -2140,10 +2148,46 @@ a:link {
     background-color: lightgrey;
   }
 }
-/* Make sure media & text blocks always stack image, then text */ 
-@media screen and (max-width: 600px) { 
-  .mobile-display { 
-    display: flex; 
-    flex-direction: row-reverse; 
-  } 
+/* Make sure media & text blocks always stack image, then text */
+@media screen and (max-width: 600px) {
+  .mobile-display {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .tagline-text {
+    font-size: x-large !important;
+    font-weight: bold !important;
+  }
+  .welcome-text {
+    font-size: xx-large !important;
+  }
+  .bgimg-2 {
+    padding: 75px 25px !important;
+  }
+  span.tagline-text {
+    width: 500px;
+  }
+}
+
+.bgimg-2 {
+  min-height: 50%;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.bgimg-2 p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bgimg-2 a {
+  text-decoration: none !important;
+  font-size: large;
+}
+label {
+  font-size: large;
+  width: 100%;
+}
+.contact-section {
+  padding: 0 120px;
 }

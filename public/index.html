@@ -13,50 +13,90 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            /* Full height image header */
+            .bgimg-1 {
+                background-position: center;
+                background-size: cover;
+                min-height: 75%;
+                background-image: url("images/pinapples.jpeg");
+                opacity: 1;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            @keyframes farmPhotos {
+                0% {
+                    background-image: url("images/pinapples.jpeg");
+                }
+
+                25% {
+                    background-image: url("images/cucumber1.jpeg");
+                }
+
+                50% {
+                    background-image: url("images/okra.jpeg");
+                }
+
+                75% {
+                    background-image: url("images/gardernegg.jpeg");
+                }
+
+                100% {
+                    background-image: url("images/tomatoes2.jpeg");
+                }
+            }
+        </style>
     </head>
 
     <body>
-
         <!-- Navbar (sit on top) -->
-        <div class="w3-top w3-padding-small">
-            <a href="/"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
-                    src="icon/brandLogo.png" alt="#"></a>
-            <div class="w3-right about-section w3-black w3-padding w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                        class="fa fa-bars"></i></a>
+        <div class="w3-top w3-padding-small" style="background-color:#30302E !important; color: #fff;"">
+            <a href=" /"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
+                src="icon/brandLogo.png" alt="#"></a>
+            <div class="w3-right w3-padding-16 w3-card" style="margin-right:15px; ">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+                    onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
                 <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-                <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+                <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUR PRODUCTS</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
             </div>
         </div>
 
         <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
         <div id="navDemo" class="w3-bar-block w3-gray w3-hide w3-hide-large w3-hide-medium w3-top"
-            style="margin-top:60px; width:50%">
+            style="margin-top:80px; width:50%;">
             <a href="/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-            <a href="#products" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+            <a href="#products" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OUR PRODUCTS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
         </div>
 
         <!-- contents -->
-        <header class="w3-display-container" id="home">
-            <div class="w3-display-container w3-wide" >
+        <div class="bgimg-1 w3-display-container" id="home">
+            <div class="w3-display-middle tagline-text w3-jumbo w3-text-white">
+                Welcome to Devopps: Your Source of Quality, Affordable, Farm Products Year-Round!
+            </div>
+        </div>
+        <div class=" w3-display-container" style="background-color:#3f9142">
+            <div class="bgimg-2 w3-content w3-text-white">
+                <p class="w3-xlarge">At <span style="font-variant: small-caps; font-weight: bold;"> Devopps Enterprse Limited</span>, we
+                    believe that
+                    everyone deserves access to fresh, nutritious, and affordable agricultural products, no matter the
+                    season. Our
+                    integrated farm combines the best of crop and livestock farming to ensure a consistent supply of
+                    quality food for your household while contributing to the growth of our community.</p>
+                <p style="padding-top:15px"><a href="#products" class="w3-button " style="background-color:#30302E">Find
+                        Our Products</a></p>
+            </div>
+        </div>
+        <header class="w3-display-container">
+            <div class="w3-display-container w3-wide">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <!-- <div class="item">
-                            <img class="w3-image w3-animate-opacity" src="images/catfish1.jpeg" alt=" " width="100%"
-                                height="825px">
-                            <div class="carousel-caption">
-                                <h3>Catfish Harvesting</h3>
-                                <p>Fishery Farm Unit</p>
-                            </div>
-                        </div> -->
                         <div class="item active">
                             <img class="w3-image w3-animate-opacity" src="images/poultry_farm.jpeg" alt=" " width="100%"
                                 height="825px">
@@ -96,7 +136,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -114,34 +153,38 @@
             <div class="w3-container w3-padding-64">
                 <div class="w3-content w3-padding-large w3-padding-48 text-justify" scrolltop()="goAbout()">
                     <div>
-                        <h2 class="w3-text-black">Our Story</h2>
-                        <p class="">Serving our community since 2021</p>
+                        <h2 class="w3-text-black" style="color: #3f9142 !important;">Our Story</h2>
                     </div>
                     <div class="w3-large">
-                        <p>Devopps Enterprise Limited is an integrated crops and
-                            livestock farm located in Ukana Ikot Akpabin, Essien Udim, Akwa Ibom, Nigeria.
-                            This
-                            innovative farm combines crop production with raising livestock, fostering a
-                            sustainable agricultural approach to create economic opportunities to improve
-                            the
-                            well-being of the community.
+                        <p>Established in 2021, Devopps Enterprise Limited emerged as an indigenous agribusiness
+                            enterprise dedicated to transforming the agricultural landscape. Rooted in a mission to
+                            produce quality, affordable agricultural products year-round for our customers, Devopps
+                            Enterprise is driven by the belief that food security is not just a goal, but a necessity.
                         </p>
-                        <p>The benefits of our agricultural practices extend deeply into the community. Agriculture is
-                            not just about producing food; it’s about fostering a healthy, vibrant community. By
-                            creating jobs and supporting local economies, we help to build strong, resilient
-                            communities. Our sustainable practices ensure that we protect the environment, which in turn
-                            supports community health and well-being. Additionally, our focus on high-quality,
-                            nutritious products contributes to the health and wellness of those we serve, providing
-                            access to fresh, wholesome foods.</p>
-                        <p>At Devopps, we are more than just farmers; we are innovators, environmental stewards, and
-                            community builders. Our commitment is to produce the best agricultural products in a way
-                            that respects the earth and supports the people who depend on it. From fruit trees and vegetable gardens, to chickens, goats, fishes and pigs we aim to not only grow incredible, local
-                            produce, but also encourage you to do the same.</p>
+                        <p>In its early days, Devopps Enterprise recognized the pressing challenges facing food
+                            production and availability in
+                            local communities. With population growth, lack of infrastructure, and economic constraints
+                            heightening the risk of food
+                            insecurity, the enterprise took on the mantle of providing consistent, nutritious produce to
+                            the mass market, thereby
+                            bridging the gap between demand and supply.</p>
+                        <p>As a proud indigenous company, Devopps Enterprise draws on traditional farming knowledge and
+                            pairs it with innovative
+                            techniques to ensure sustainable production. The enterprise’s operations extend beyond
+                            agriculture; it is a key player
+                            in community building, dedicated to creating job opportunities, empowering local farmers,
+                            and fostering economic growth
+                            in rural areas. By doing so, the company actively contributes to improving the living
+                            standards of people in the
+                            community.</p>
                         <p>
-                            When you choose Devopps, you're not just choosing fresh produce; you're choosing
-                            a
-                            commitment to health, community, and sustainability. Our integrated approach to
-                            farming reflects our dedication to creating a lasting impact.
+                            Through continuous investment in modern agricultural methods, Devopps Enterprise has rapidly
+                            scaled up its capacity,
+                            positioning itself as a leader in the agribusiness sector. The company’s unwavering
+                            commitment to producing affordable
+                            and high-quality agricultural products has earned it trust and recognition, reinforcing its
+                            role in addressing food
+                            security while enhancing livelihoods across the nation.
                         </p>
                         <p>
                             Join us in cultivating not just crops, but a healthier, more vibrant future for
@@ -150,38 +193,84 @@
                         <p></p><br>
                     </div>
                     <div>
-                        <h2 class="w3-text-black">Our Mission</h2>
-                        <p class="w3-large">We are dedicated to producing affordable quality agricultural
-                            products year-round for our customers and empower people by providing meaningful work.</p><br>
+                        <h2 class="w3-text-black" style="color: #3f9142 !important;">Our Mission</h2>
+                        <p class="w3-large">We are dedicated to producing quality, affordable agricultural
+                            products year-round for our customers and empower people by providing meaningful work.</p>
+                        <br>
                     </div>
                     <div>
-                        <h2 class="w3-text-black">Our Vision</h2>
+                        <h2 class="w3-text-black" style="color: #3f9142 !important;">Our Vision</h2>
                         <p class="w3-large">Our vision is to be an innovative agricultural enterprise that
                             combines natural resources and technology to produce quality products in a
                             sustainable way to meet the demands of our customers while enhancing the well-being of our
                             community.</p><br>
+                    </div>
+                    <div>
+                        <h2 class="w3-text-black" style="color: #3f9142 !important;">Our Values</h2>
+                        <div class="w3-row w3-large">
+                            <div class="w3-half w3-container">
+                                <h3 style="color: #3f9142 !important;">Affordability</h3>
+                                <p>We believe that quality agricultural products should be accessible to everyone. By
+                                    optimizing our processes and reducing
+                                    waste, we are able to produce affordable products without compromising on quality.
+                                    Our goal is to provide value to our
+                                    customers, making healthy and nutritious food available year-round.</p>
+                            </div>
+                            <div class="w3-half w3-container">
+                                <h3 style="color: #3f9142 !important;">Community</h3>
+                                <p>Our success is intertwined with the well-being of our community. We are committed to
+                                    enhancing the lives of those around
+                                    us by providing meaningful work and opportunities for growth. We believe in
+                                    empowering individuals through employment,
+                                    education, and support, fostering a sense of pride and purpose in our workforce.</p>
+                            </div>
+                        </div>
+                        <div class="w3-row w3-large">
+                            <div class="w3-half w3-container">
+                                <h3 style="color: #3f9142 !important;">Empowerment</h3>
+                                <p>We believe in creating opportunities for growth and development, both within our
+                                    organization and in the wider community. By providing meaningful work, continuous
+                                    training, and a supportive work
+                                    environment, we empower our employees to reach their full potential. Additionally,
+                                    we are committed to empowering the
+                                    communities we serve by offering resources, education, and support that enable
+                                    individuals to improve their livelihoods
+                                    and achieve their goals.</p>
+                            </div>
+                            <div class="w3-half w3-container ">
+                                <h3 style="color: #3f9142 !important;">Innovation</h3>
+                                <p>We are constantly exploring new ways to enhance our farming methods, from adopting
+                                    the latest agricultural technologies
+                                    to implementing data-driven solutions that optimize our production processes. By
+                                    staying at the forefront of industry
+                                    advancements, we are able to deliver superior products that meet the evolving needs
+                                    of our customers and contribute to a
+                                    more efficient and sustainable future.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Prudocts Section -->
-        <div class="products-section">
-            <div class="w3-display-container w3-padding-64 w3-content" id="products" scrollTop()="goProducts()">
-                <div class="w3-padding-64  w3-padding-large text-justify">
+        <div class="products-section" id="products">
+            <div class="w3-display-container w3-padding-64 w3-content" scrollTop()="goProducts()">
+                <div class="w3-padding-64  w3-padding-large text-justify ">
                     <div>
-                        <h2 class="w3-border-bottom w3-border-light-grey w3-text-black">Our Products</h2>
+                        <h2 class="w3-border-bottom w3-border-light-grey w3-text-black"
+                            style="color: #3f9142 !important;">Our Products</h2>
                     </div>
 
-                    <div class="w3-display-container w3-row">
+                    <div class="w3-display-container w3-row ">
                         <div class="w3-padding-top-48">
                             <div class="w3-half products-item-padding">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/tomatoes1.jpeg" alt="" style="width:100%">
+                                    <img src="images/tomatoes1.jpeg" alt="" style="width:100%; border-radius:10px">
                                 </div>
                             </div>
                             <div class="w3-half w3-large">
-                                <h3 class="w3-text-black">Fresh Tomatoes</h3>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Fresh Tomatoes</h3>
                                 <P>Our farm combines traditional farming methods with modern techniques to bring you
                                     tomatoes that are bursting with flavor and nutrition.</P>
 
@@ -198,7 +287,7 @@
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-top-48">
                             <div class="w3-half w3-large products-item-padding" style=" ">
-                                <h3 class="w3-text-black">Fresh Cucumbers</h3>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Fresh Cucumbers</h3>
                                 <p>Our cucumbers are cultivated with care and dedication, ensuring they are the perfect
                                     addition to your salads, sandwiches, and snacks.</p>
                                 <p>Packed with essential vitamins and minerals, our cucumbers are a healthy choice for
@@ -208,7 +297,7 @@
                             </div>
                             <div class=" w3-half">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/cucumber1.jpeg" alt="" style="width:100%">
+                                    <img src="images/cucumber1.jpeg" alt="" style="width:100%; border-radius:10px">
                                 </div>
                             </div>
                         </div>
@@ -218,11 +307,11 @@
                         <div class="w3-padding-top-48">
                             <div class="w3-half products-item-padding">
                                 <div class="w3-card w3-hover-shadow mobile-display">
-                                    <img src="images/garden_eggs1.jpeg" alt="" style="width:100%">
+                                    <img src="images/garden_eggs1.jpeg" alt="" style="width:100%; border-radius:10px">
                                 </div>
                             </div>
                             <div class="w3-half w3-large">
-                                <h3 class="w3-text-black">Fresh Garden Eggs</h3>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Fresh Garden Eggs</h3>
                                 <p>These vibrant vegetables, known scientifically as Solanum aethiopicum, are a variety
                                     of eggplant native to Africa.</p>
                                 <p>A great source of vitamins and minerals, particularly vitamin C, potassium, and
@@ -234,7 +323,7 @@
                     <div class="w3-display-container w3-row mobile-display">
                         <div class="w3-padding-top-48">
                             <div class="w3-half w3-large products-item-padding">
-                                <h3 class="w3-text-black">Fresh Okra</h3>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Fresh Okra</h3>
                                 <p>Okra is a nutritional powerhouse, packed with vitamins, minerals, and fiber. It's a
                                     versatile ingredient perfect for a
                                     variety of dishes, from traditional stews to modern cuisine.</p>
@@ -243,7 +332,7 @@
                             </div>
                             <div class=" w3-half">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/okra.jpeg" alt="" style="width:100%">
+                                    <img src="images/okra.jpeg" alt="" style="width:100%; border-radius:10px">
                                 </div>
                             </div>
                         </div>
@@ -253,11 +342,11 @@
                         <div class="w3-padding-top-48">
                             <div class="w3-half products-item-padding">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/eggplant1.jpeg" alt="" style="width:99%">
+                                    <img src="images/eggplant1.jpeg" alt="" style="width:99%; border-radius:10px">
                                 </div>
                             </div>
                             <div class="w3-half w3-large">
-                                <h3 class="w3-text-black">Eggplants</h3>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Eggplants</h3>
                                 <p>We take pride in cultivating premium eggplants that embody the perfect balance of
                                     taste, quality, and sustainability.</p>
                                 <p>Our eggplants are grown with the utmost care, ensuring they are a healthy and
@@ -271,12 +360,16 @@
                         <div class="w3-padding-top-48">
                             <div class="w3-half w3-large products-item-padding">
 
-                                <h3 class="w3-text-black">Oyster Mushrooms</h3>
-                                <p>Discover the unique flavor and versatility of Oyster Mushrooms, a favorite among chefs and home cooks alike. With their soft, velvety texture and mild, earthy taste, these mushrooms add a delicious touch to any dish. Rich in vitamins, antioxidants, and fiber, they not only elevate your meals but also support a healthy lifestyle.</p>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Oyster Mushrooms</h3>
+                                <p>Discover the unique flavor and versatility of Oyster Mushrooms, a favorite among
+                                    chefs and home cooks alike. With their soft, velvety texture and mild, earthy taste,
+                                    these mushrooms add a delicious touch to any dish. Rich in vitamins, antioxidants,
+                                    and fiber, they not only elevate your meals but also support a healthy lifestyle.
+                                </p>
                             </div>
                             <div class=" w3-half">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/mushrooms1.jpeg" alt="" style="width:99%">
+                                    <img src="images/mushrooms1.jpeg" alt="" style="width:99%; border-radius:10px">
 
                                 </div>
                             </div>
@@ -287,16 +380,16 @@
                         <div class="w3-padding-top-48">
                             <div class="w3-half products-item-padding">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/table_size_fish.jpeg" alt="" style="width:99%">
+                                    <img src="images/table_size_fish.jpeg" alt="" style="width:99%; border-radius:10px">
                                 </div>
                             </div>
                             <div class="w3-half w3-large">
-                                <h3 class="w3-text-black">Farm-Raised Catfish</h3>
-                                <p>We are dedicated to producing high-quality, farm-fresh eggs that are both delicious
-                                    and nutritious. Our hens are raised in a healthy, natural environment, ensuring that
-                                    every egg we collect is of the highest standard.</p>
-                                <p>Our eggs are collected daily and go from farm to table in record time, so you can
-                                    enjoy the freshest eggs possible.</p>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Farm-Raised Catfish</h3>
+                                <p>Experience the wholesome taste of our Farm-Raised Catfish, carefully cultivated to
+                                    bring you the finest quality seafood.
+                                    Renowned for its tender texture and mild, clean flavor, our catfish is the perfect
+                                    addition to your kitchen, whether
+                                    you’re a home cook or a professional chef.</p>
                             </div>
                         </div>
                     </div>
@@ -304,117 +397,109 @@
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-top-48">
                             <div class="w3-half w3-large products-item-padding">
-                                <h3 class="w3-text-black">Farm-Fresh Eggs</h3>
-                                <p>Our eggs are laid by free-roaming hens raised in a deep litter system, providing a more natural and healthier environment. This system allows the hens to engage in their natural behaviors leading to happier, stress-free birds and ultimately producing superior quality eggs.</p>
+                                <h3 class="w3-text-black" style="color: #3f9142 !important;">Farm-Fresh Eggs</h3>
+                                <p>Our eggs are laid by free-roaming hens raised in a deep litter system, providing a
+                                    more natural and healthier environment. This system allows the hens to engage in
+                                    their natural behaviors leading to happier, stress-free birds and ultimately
+                                    producing superior quality eggs.</p>
                                 <p>Our eggs are collected daily and go from farm to table in record time, so you can
                                     enjoy the freshest eggs possible.</p>
                             </div>
                             <div class=" w3-half">
                                 <div class="w3-card w3-hover-shadow">
-                                    <img src="images/eggs1.jpeg" alt="" style="width:99%">
+                                    <img src="images/eggs1.jpeg" alt="" style="width:99%; border-radius:10px">
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- =============== -->
         <!-- Contact Section -->
-        <div class="contact-section">
-            <div class="w3-display-container w3-content" style="max-width:1564px" id="contact"
-                scrollTop()="goContact()">
-                <!-- <div class=" w3-padding-top-32"> -->
-                <div class="w3-container w3-padding-top-32">
-                    <div class="w3-container w3-padding-top-64 mobileContent">
-                        <h2 class="w3-text-black">Get in Touch</h2>
-                    </div>
-                    <div class="w3-row w3-display-container w3-row-padding">
-                        <!-- <div class="w3-row-padding"> -->
-                        <div class="w3-half w3-container" style="height:700px; background-color: w3-gray;">
-
-                            <div class="w3-padding-36 w3-padding-small w3-text-white">
-
-                                <div class="w3-padding-16 w3-text-white">
-                                    <p class="w3-opacity">Contact us and we'll get back to you within 24 hours
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-map-marker fa-lg" aria-hidden="true" style="width:30px"></i>
-                                        <span>Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
-                                        <span style="margin-left:34px"> Essien Udim L.G.A,</span><br>
-                                        <span style="margin-left:34px"> Akwa Ibom State,</span><br>
-                                        <span style="margin-left:34px">Nigeria.</span><br>
-                                    </p>
-                                    <p><i class="fa fa-phone fa-lg" aria-hidden="true" style="
-                                                width:30px"></i>&ensp;<a class="w3-text-white"
-                                            href="tel:+2349167832992">+234 (0)916 783
-                                            2992</a><br></p>
-                                    <p><i class="fa fa-whatsapp fa-lg" aria-hidden="true" style="
-                                                width:30px"></i>&ensp;<a class="w3-text-white"
-                                            href="https://api.whatsapp.com/send?phone=2349167832992"
-                                            target="_blank">Send
-                                            WhatsApp Message</a><br></p>
-                                    <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:30px">
-                                        </i>&ensp;<a class="w3-text-white" href="mailto:info@devoppsng.com"
-                                            target="_top">info@devoppsng.com</a><br></p>
-                                </div>
-                                <!-- <form class="w3-container w3-card w3-padding-16" action="/action_page.php"
-                                        target="_blank"> -->
-                                <form class="w3-container w3-card w3-padding-top-32" action="mailto:info@devoppsng.com"
-                                    method="post" enctype="text/plain">
-                                    <fieldset>
-                                        <div class="w3-section" id="message">
-                                            <label style="width:100%; ">Name
-                                                <input class="w3-input" type="text" required autocomplete="on"
-                                                    name="Name"></label>
-                                        </div>
-                                        <div class="w3-section">
-                                            <label style="width:100%;">Email
-                                                <input class="w3-input" type="text" required autocomplete="on"
-                                                    name="Email"></label>
-                                        </div>
-                                        <div class="w3-section w3-text-white">
-                                            <label style="width:100%;">Message <input class="w3-input" type=" text"
-                                                    required autocomplete="on" name="Message" id="message"></label>
-                                        </div>
-                                        <!-- <button type="submit" class="w3-button w3-teal w3-right">Send</button> -->
-                                        <button class="w3-button w3-section w3-right  w3-black" type="submit">
-                                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                        </button>
-                                    </fieldset>
-                                </form>
+        <div class="contact-section" id="contact">
+            <div class="w3-container  w3-padding-64">
+                <div class="w3-container w3-padding-48">
+                    <h2 class="w3-border-bottom w3-border-light-grey w3-text-white">Get in Touch</h2>
+                </div>
+                <div class="w3-row w3-display-container w3-row-padding">
+                    <div class="w3-half w3-container w3-padding-16">
+                        <div class="w3-text-white">
+                            <div class="w3-text-white w3-large" style=" padding-bottom: 40px;">
+                                <p class="w3-opacity">Contact us and we'll get back to you within 24 hours
+                                </p>
+                                <p>
+                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true" style="width:35px"></i>
+                                    <span>Urua-Ette Road, Ukana Ikot Akpabin,</span><br>
+                                    <span style="margin-left:40px"> Essien Udim L.G.A,</span><br>
+                                    <span style="margin-left:40px"> Akwa Ibom State,</span><br>
+                                    <span style="margin-left:40px">Nigeria.</span><br>
+                                </p>
+                                <p><i class="fa fa-phone fa-2x" aria-hidden="true" style="
+                                                width:35px"></i>&ensp;<a class="w3-text-white"
+                                        href="tel:+2349167832992">+234 (0)916 783 2992
+                                        2992</a><br></p>
+                                <p><i class="fa fa-whatsapp fa-2x" aria-hidden="true" style="
+                                                width:35px"></i>&ensp;<a class="w3-text-white"
+                                        href="https://api.whatsapp.com/send?phone=2349167832992" target="_blank">Send
+                                        WhatsApp Message</a><br></p>
+                                <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:35px">
+                                    </i>&ensp;<a class="w3-text-white" href="mailto:info@devoppsng.com"
+                                        target="_top">info@devoppsng.com</a><br></p>
                             </div>
+                            <form class="" action="https://fabform.io/f/YI1xsnp" method="post" enctype="text/plain">
+                                <fieldset>
+                                    <div class="w3-section" id="message">
+                                        <label>Name
+                                            <input class="w3-input" type="text" required autocomplete="on"
+                                                name="Name"></label>
+                                    </div>
+                                    <div class="w3-section">
+                                        <label>Email
+                                            <input class="w3-input" type="text" required autocomplete="on"
+                                                name="Email"></label>
+                                    </div>
+                                    <div class="w3-section w3-text-white">
+                                        <label>Message <textarea rows="2" required name="Message" id="message"
+                                                style="width: 100%"></textarea></label>
+                                    </div>
+                                    <!-- <button type="submit" class="w3-button w3-teal w3-right">Send</button>  -->
+                                    <button class="w3-button w3-section w3-right  w3-black" type="submit">
+                                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                                    </button>
+                                </fieldset>
+                            </form>
                         </div>
-                        <div class="w3-half w3-container w3-center" style="height:700px">
-                            <div class="w3-padding-48">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
-                                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
+                    </div>
+                    <div class="w3-half w3-container w3-center w3-padding-16">
+                        <div class="">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24010.793805979545!2d7.729953013648085!3d5.095162927856391!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697901199261!5m2!1sen!2sus"
+                                width="100%" height="700px" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End page content -->
-            <!-- Footer -->
-            <footer class="w3-padding-16 w3-black w3-center w3-footer">
-                <h5>Find Us On</h5>
-                <div class="w3-xlarge w3-padding-16">
-                    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-                    <a href="http://www.instagram.com/devoppsenterprise" target="_blank"><i
-                            class="fa fa-instagram w3-hover-opacity fa-lg social"></i></a>
-                    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-                    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-                    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-                    <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-                </div>
-                <p>Devopps Enterprise Limited&emsp;<a href="#home"
-                        title="Devopps Enterprise Limited">www.devoppsng.com</a>
-                </p>
-            </footer>
-            <script src="/js/myScript.js"></script>
+        </div>
+        </div>
+        <!-- End page content -->
+        <!-- Footer -->
+        <footer class="w3-padding-16 w3-center w3-footer" style="background-color: #30302E; color: white;">
+            <h5>Find Us On</h5>
+            <div class="w3-xlarge w3-padding-16">
+                <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+                <a href="http://www.instagram.com/devoppsenterprise" target="_blank"><i
+                        class="fa fa-instagram w3-hover-opacity fa-2x social"></i></a>
+                <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+                <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+                <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+                <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+            </div>
+            <p>Devopps Enterprise Limited&emsp;<a href="#home" title="Devopps Enterprise Limited">www.devoppsng.com</a>
+            </p>
+        </footer>
+        <script src="/js/myScript.js"></script>
 
     </body>
 
