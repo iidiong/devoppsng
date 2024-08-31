@@ -377,6 +377,7 @@ a {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  border-radius: 0.50rem;
 }
 
 .w3-btn:hover {
@@ -2057,7 +2058,7 @@ a:link {
 }
 @media screen and (min-width: 600px) {
   .products-item-padding {
-    padding-right: 16px;
+    padding-right: 24px;
   }
 }
 
@@ -2088,11 +2089,9 @@ a:link {
 }
 .products-section {
   background-color: #f3fcf2;
-  padding-bottom: 130px;
 }
 .contact-section {
   background-color: #3f9142;
-  /* padding-bottom: 48px; */
 }
 .w3-top a {
   text-decoration: none !important;
@@ -2166,6 +2165,7 @@ a:link {
   span.tagline-text {
     width: 500px;
   }
+  
 }
 
 .bgimg-2 {
@@ -2189,4 +2189,19 @@ label {
 }
 .contact-section {
   padding: 0 120px;
+}
+.cta-btn {
+  hover: none !important;
+  text-decoration: none !important;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 0.50rem;
+  
+}
+.cta-btn:hover {
+  color: #ccc !important;
+}
+.product-item-image {
+  width: 100%;
+  border-radius: 10px;
 }
