@@ -29,25 +29,25 @@
     <body>
         <!-- Navbar (sit on top) -->
         <div class="w3-top w3-padding-small" style="background-color:#30302E !important; color: #fff;">
-            <a href=" /"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
+            <a href="/"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
                 src="icon/brandLogo.png" alt="#"></a>
             <div class="w3-right w3-padding-16 w3-card" style="margin-right:15px; ">
                 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
                     onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
-                <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
-                <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUR PRODUCTS</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+                <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goHome()">HOME</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goAbout()" >ABOUT US</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goProducts()">OUR PRODUCTS</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goContact()">CONTACT US</a>
             </div>
         </div>
 
         <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
         <div id="navDemo" class="w3-bar-block w3-gray w3-hide w3-hide-large w3-hide-medium w3-top"
             style="margin-top:80px; width:50%;">
-            <a href="/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
-            <a href="#products" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OUR PRODUCTS</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+            <a href="/" class="w3-bar-item w3-button w3-padding-large" onclick="goHome()">HOME</a>
+            <a class="w3-bar-item w3-button w3-padding-large" onclick="goAbout()">ABOUT US</a>
+            <a class="w3-bar-item w3-button w3-padding-large" onclick="goProducts()">OUR PRODUCTS</a>
+            <a class="w3-bar-item w3-button w3-padding-large" onclick="goContact()">CONTACT US</a>
         </div>
 
         <!-- contents -->
@@ -269,7 +269,12 @@
 
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-48">
-                            <div class="w3-half w3-large products-item-padding">
+                            <div class=" w3-half products-item-padding">
+                                <div class="w3-card w3-hover-shadow">
+                                    <img src="images/table_size_fish.jpeg" alt="" style="width:100%; border-radius:10px">
+                                </div>
+                            </div>
+                            <div class="w3-half w3-large">
                                 <div>
                                     <h3 style="color: #3f9142 !important;">Farm-Raised Catfish</h3>
                                     <p>Experience the wholesome taste of our Farm-Raised Catfish, carefully cultivated
@@ -282,14 +287,9 @@
                                 </div>
                                 <div><a href="#contact" class="w3-text-white cta-btn" type="button"
                                         style="background-color:#30302E">Call Our Farm to Place Your Order</a>
-                                </div><br>
-                            </div>
-                            <div class=" w3-half">
-                                <div class="w3-card w3-hover-shadow">
-                                    <img src="images/table_size_fish.jpeg" alt=""
-                                        style="width:100%; border-radius:10px">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -319,7 +319,12 @@
                     </div>
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-48">
-                            <div class="w3-half w3-large products-item-padding">
+                            <div class=" w3-half products-item-padding">
+                                <div class="w3-card w3-hover-shadow">
+                                    <img src="images/cucumber1.jpeg" alt="" class="product-item-image">
+                                </div>
+                            </div>
+                            <div class="w3-half w3-large ">
                                 <div>
                                     <h3 style="color: #3f9142 !important;">Fresh Cucumbers</h3>
                                     <p>Our cucumbers are cultivated with care and dedication, ensuring they are the
@@ -334,13 +339,8 @@
                                 <div><a href="#contact" class="w3-text-white cta-btn" type="button"
                                         style="background-color:#30302E">Call Our Farm to Place Your Order</a>
                                 </div>
-                                <br>
                             </div>
-                            <div class=" w3-half">
-                                <div class="w3-card w3-hover-shadow">
-                                    <img src="images/cucumber1.jpeg" alt="" class="product-item-image">
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -369,7 +369,12 @@
 
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-48">
-                            <div class="w3-half w3-large products-item-padding">
+                            <div class=" w3-half products-item-padding">
+                                <div class="w3-card w3-hover-shadow">
+                                    <img src="images/okra.jpeg" alt="" class="product-item-image">
+                                </div>
+                            </div>
+                            <div class="w3-half w3-large ">
                                 <div>
                                     <h3 style="color: #3f9142 !important;">Fresh Okra</h3>
                                     <p>Okra is a nutritional powerhouse, packed with vitamins, minerals, and fiber. It's
@@ -380,13 +385,9 @@
                                 </div>
                                 <div><a href="#contact" class="w3-text-white cta-btn" type="button"
                                         style="background-color:#30302E">Call Our Farm to Place Your Order</a>
-                                </div><br>
-                            </div>
-                            <div class=" w3-half">
-                                <div class="w3-card w3-hover-shadow">
-                                    <img src="images/okra.jpeg" alt="" class="product-item-image">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -415,7 +416,12 @@
 
                     <div class="w3-display-container w3-row">
                         <div class="w3-padding-48">
-                            <div class="w3-half w3-large products-item-padding">
+                            <div class=" w3-half products-item-padding">
+                                <div class="w3-card w3-hover-shadow">
+                                    <img src="images/mushrooms1.jpeg" alt="" class="product-item-image">
+                                </div>
+                            </div>
+                            <div class="w3-half w3-large ">
                                 <div>
                                     <h3 style="color: #3f9142 !important;">Oyster Mushrooms</h3>
                                     <p>Discover the unique flavor and versatility of Oyster Mushrooms, a favorite among
@@ -429,13 +435,9 @@
                                 </div>
                                 <div><a href="#contact" class="w3-text-white cta-btn" type="button"
                                         style="background-color:#30302E">Call Our Farm to Place Your Order</a>
-                                </div><br>
-                            </div>
-                            <div class=" w3-half">
-                                <div class="w3-card w3-hover-shadow">
-                                    <img src="images/mushrooms1.jpeg" alt="" class="product-item-image">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -523,7 +525,7 @@
                 <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
                 <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
             </div>
-            <p>Devopps Enterprise Limited&emsp;<a href="#home" title="Devopps Enterprise Limited">www.devoppsng.com</a>
+            <p><i class="fa fa-copyright">Devopps Enterprise Limited&emsp;<a href="/" title="Devopps Enterprise Limited">www.devoppsng.com</a></i>
             </p>
         </footer>
         <script src="/js/myScript.js"></script>

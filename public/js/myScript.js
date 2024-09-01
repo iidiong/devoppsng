@@ -1,22 +1,24 @@
 
-
-let navContainer = document.getElementById("navContainer");
-let navInner = document.getElementById("navInner");
-let brandLogo = document.getElementById("brandLogo");
+const brandLogo = document.getElementById("brandLogo");
 
 function goHome() {
     document.getElementById("home").scrollIntoView();
+    myFunction()
 
 }
 function goAbout() {
     document.getElementById("about").scrollIntoView();
+    myFunction()    
 }
 function goProducts() {
     document.getElementById("products").scrollIntoView();
+    myFunction()
 }
 function goContact() {
     document.getElementById("contact").scrollIntoView();
+    myFunction()
 }
+
 
 
 window.onload = function () {
