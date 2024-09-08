@@ -1513,16 +1513,17 @@ a {
   /* color: #000 !important; */
   /* background-color: #ccc !important; */
   color: #3f9142 !important;
-  background-color: #fff !important;
+  background-color: #ccc !important;
   font-weight: bold !important;
 }
 .navbar-item:hover {
-  color: #fff !important;
+  color: #ccc !important;
+  -webkit-text-decoration: underline solid #3f9142 !important;
   text-decoration: underline solid #3f9142 35% !important;
 }
 #navbar:hover {
   color: #000 !important;
-  background-color: #ccc  !important;
+  background-color: #ccc !important;
 }
 .w3-transparent,
 .w3-hover-none:hover {
