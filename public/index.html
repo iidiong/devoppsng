@@ -19,7 +19,7 @@
                 background-position: center;
                 background-size: cover;
                 min-height: 75%;
-                background-image: url("images/ourdeeplitterSystem.jpeg");
+                background-image: url("images/corn-field.png");
                 opacity: 1;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
@@ -28,16 +28,16 @@
 
     <body>
         <!-- Navbar (sit on top) -->
-        <div class="w3-top w3-padding-small" style="background-color:#30302E !important; color: #fff;">
+        <div class="w3-top w3-padding-small" style="background-color:#30302E; color: #fff; ">
             <a href="/"><img id="brandLogo" class="brand-logo w3-bar-item w3-button w3-hover-none"
                     src="icon/brandLogo.png" alt="#"></a>
-            <div class="w3-right w3-padding-16 w3-card" style="margin-right:15px; ">
-                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-                    onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
-                <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goHome()">HOME</a>
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goAbout()">ABOUT US</a>
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goProducts()">OUR PRODUCTS</a>
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="goContact()">CONTACT US</a>
+            <div  class="w3-right w3-padding-16" style="margin-right:15px; ">
+                <a class="w3-bar-item w3-hide-medium w3-button w3-hide-large w3-right" href="javascript:void(0)"
+                    onclick="myFunction()" title="Toggle Navigation Menu"><i id="navbar" class="fa fa-bars fa-2x"></i></a>
+                <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hide-small navbar-item w3-hover-none" onclick="goHome()">HOME</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small navbar-item w3-hover-none" onclick="goAbout()">ABOUT US</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small navbar-item w3-hover-none" onclick="goProducts()">OUR PRODUCTS</a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small navbar-item w3-hover-none" onclick="goContact()">CONTACT US</a>
             </div>
         </div>
 
@@ -52,11 +52,11 @@
 
         <!-- contents -->
         <div class="bgimg-1 w3-display-container" id="home">
-            <div class="w3-display-middle tagline-text w3-jumbo w3-text-white">
+            <div class="w3-display-middle tagline-text w3-jumbo w3-text-white" style="padding: 300px 0 0">
                 Welcome to Devopps: Your Source of Quality, Affordable, Farm Products Year-Round!
             </div>
         </div>
-        <div class=" w3-display-container" style="background-color:#3f9142">
+        <div class=" w3-display-container" style="background-color:#3f9142; ">
             <div class="bgimg-2 w3-content w3-text-white">
                 <p class="w3-xlarge">At <span style="font-variant: small-caps; font-weight: bold;"> Devopps Enterprse
                         Limited</span>, we
@@ -65,9 +65,7 @@
                     season. Our
                     integrated farm combines the best of crop and livestock farming to ensure a consistent supply of
                     quality food for your household while contributing to the growth of our community.</p>
-                <p style="padding-top:15px"><a href="#products" class="w3-button "
-                        style="background-color:#30302E; border-radius: 0.25rem;">Find
-                        Our Products</a></p>
+                <p style="padding-top:15px"><a href="#products" class="w3-button" style="background-color:#30302E; border-radius: 0.25rem;">Find Our Products</a></p>
             </div>
         </div>
         <header class="w3-display-container">
@@ -512,9 +510,8 @@
                                                 style="width: 100%"></textarea></label>
                                     </div>
                                     <!-- <button type="submit" class="w3-button w3-teal w3-right">Send</button>  -->
-                                    <button class="w3-button w3-section w3-right  w3-black" type="submit">
-                                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                    </button>
+                                    <button class="w3-button w3-section w3-right w3-black" type="submit">
+                                        <i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
                                 </fieldset>
                             </form>
                         </div>

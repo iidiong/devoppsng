@@ -377,7 +377,7 @@ a {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
-  border-radius: 0.50rem;
+  border-radius: 0.5rem;
 }
 
 .w3-btn:hover {
@@ -1516,7 +1516,14 @@ a {
   background-color: #fff !important;
   font-weight: bold !important;
 }
-
+.navbar-item:hover {
+  color: #fff !important;
+  text-decoration: underline solid #3f9142 35% !important;
+}
+#navbar:hover {
+  color: #000 !important;
+  background-color: #ccc  !important;
+}
 .w3-transparent,
 .w3-hover-none:hover {
   background-color: transparent !important;
@@ -2165,7 +2172,6 @@ a:link {
   span.tagline-text {
     width: 500px;
   }
-  
 }
 
 .bgimg-2 {
@@ -2195,8 +2201,7 @@ label {
   text-decoration: none !important;
   text-align: center;
   padding: 10px 16px;
-  border-radius: 0.50rem;
-  
+  border-radius: 0.5rem;
 }
 .cta-btn:hover {
   color: #ccc !important;

@@ -56,10 +56,14 @@ function carousel() {
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
     var x = document.getElementById("navDemo");
+    var y = document.getElementById("navbar");
+   
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
+        y.className = y.className.replace("fa-bars", "fa-close");
     } else {
         x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace("fa-close", "fa-bars");
     }
 }
 
