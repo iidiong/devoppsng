@@ -914,6 +914,13 @@ a {
   .w3-dropdown-click.w3-mobile .w3-button {
     width: 100%;
   }
+  .flex-container {
+    flex-direction: column;
+    display: block;
+  }
+  .w3-card {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -923,6 +930,9 @@ a {
 
   .w3-modal {
     padding-top: 50px;
+  }
+  .small-screen {
+    padding-top: 80px !important;
   }
 }
 
@@ -2024,7 +2034,7 @@ a {
   position: relative;
   display: inline-block;
   padding: auto;
-  margin: 0;
+  margin: auto;
 }
 .menu-item {
   margin: 20px;
@@ -2040,7 +2050,7 @@ a {
   width: 100%;
   height: 400px;
   margin: auto;
-  z-index: 1;
+  z-index: -1;
 }
 a:link {
   /* background-color: white; */
@@ -2063,11 +2073,6 @@ a:link {
   width: 55%;
   top: 300px;
   left: 300px;
-}
-@media screen and (min-width: 600px) {
-  .products-item-padding {
-    padding-right: 24px;
-  }
 }
 
 /* mobile adding */
@@ -2143,7 +2148,7 @@ a:link {
     position: relative;
     display: inline-block;
     padding-top: 15px;
-    margin: 0;
+    margin: auto;
   }
   .topnav .w3-mobile {
     color: black;
@@ -2160,36 +2165,15 @@ a:link {
     display: flex;
     flex-direction: row-reverse;
   }
-  .tagline-text {
-    font-size: x-large !important;
-    font-weight: bold !important;
-  }
   .welcome-text {
     font-size: xx-large !important;
   }
-  .bgimg-2 {
-    padding: 75px 25px !important;
-  }
-  span.tagline-text {
-    width: 500px;
+  .w3-col {
+    display: block;
+    width: 100%;
   }
 }
 
-.bgimg-2 {
-  min-height: 50%;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.bgimg-2 p {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.bgimg-2 a {
-  text-decoration: none !important;
-  font-size: large;
-}
 label {
   font-size: large;
   width: 100%;
@@ -2207,7 +2191,19 @@ label {
 .cta-btn:hover {
   color: #ccc !important;
 }
-.product-item-image {
+.flex-container {
+  display: flex;
   width: 100%;
-  border-radius: 10px;
+}
+.w3-col {
+  display: flex;
+  flex: 1;
+}
+.w3-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.footer {
+  margin-top: auto;
 }
