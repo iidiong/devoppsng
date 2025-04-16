@@ -11,10 +11,10 @@ html {
 }
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html {
+/* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
 body {
   margin: 0;
@@ -160,6 +160,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -208,6 +209,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+  appearance: button;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -1031,40 +1033,41 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .w3-display-left {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(0%, -50%);
   -ms-transform: translate(-0%, -50%);
+  transform: translate(0%, -50%);
 }
 
 .w3-display-right {
   position: absolute;
   top: 50%;
   right: 0%;
-  transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
 
 .w3-display-topmiddle {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
+   transform: translate(-50%, 0%);
 }
 
 .w3-display-bottommiddle {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+ 
 }
 
 .w3-display-container:hover .w3-display-hover {
@@ -2091,7 +2094,7 @@ a:link {
 }
 
 .brand-color {
-  color: #3f9142;
+  color: #3f9142 !important;
 }
 .brand-color-bgr {
   background-color: #3f9142;
@@ -2103,6 +2106,10 @@ a:link {
 .products-section {
   background-color: #f3fcf2;
 }
+.w3-card {
+  background-color: #dfe9dc;
+}
+
 .contact-section {
   background-color: #3f9142;
 }
@@ -2182,7 +2189,6 @@ label {
   padding: 0 120px;
 }
 .cta-btn {
-  hover: none !important;
   text-decoration: none !important;
   text-align: center;
   padding: 10px 16px;
