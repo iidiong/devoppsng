@@ -901,7 +901,7 @@ a {
     display: block;
     width: 100% !important;
   }
-  
+
   .w3-bar-item.w3-mobile,
   .w3-dropdown-hover.w3-mobile,
   .w3-dropdown-click.w3-mobile {
@@ -2111,6 +2111,10 @@ a:link {
 .contact-section {
   background-color: #3f9142;
 }
+.footer-section {
+  background-color: #30302e;
+  color: #fff;
+}
 .w3-top a {
   text-decoration: none !important;
 }
@@ -2189,6 +2193,7 @@ label {
   text-align: center;
   padding: 10px 16px;
   border-radius: 0.5rem;
+  background-color: #30302e;
 }
 .cta-btn:hover {
   color: #ccc !important;
@@ -2208,4 +2213,14 @@ label {
 }
 .footer {
   margin-top: auto;
+}
+.nav-bar {
+  background-color: #30302e;
+  color: #fff;
+}
+.w3-content {
+  max-width: 1200px;
+}
+.prooduct-desc {
+  padding-top: 25px;
 }
