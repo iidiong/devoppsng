@@ -956,6 +956,13 @@ a {
   .w3-hide-medium {
     display: none !important;
   }
+  .brand-logo {
+    height: 62px !important;
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2126,6 +2133,10 @@ a:link {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .sqs-row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
 
