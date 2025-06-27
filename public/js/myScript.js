@@ -8,7 +8,7 @@ function goHome() {
 }
 function goAbout() {
     document.getElementById("about").scrollIntoView();
-    myFunction()    
+    myFunction()
 }
 function goProducts() {
     document.getElementById("products").scrollIntoView();
@@ -57,7 +57,7 @@ function carousel() {
 function myFunction() {
     var x = document.getElementById("navDemo");
     var y = document.getElementById("navbar");
-   
+
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
         y.className = y.className.replace("fa-bars", "fa-close");
@@ -74,3 +74,19 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    const form = document.getElementById('contact-form');
+    e.preventDefault();
+    // form.reset();
+
+
+    emailjs.sendForm('service_52oeeui', 'template_o2pluow', this)
+        .then(function (response) {
+            // alert('Email sent successfully!');
+            console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+            // alert('Failed to send email. Please try again.');
+            console.log('FAILED...', error);
+        });
+});

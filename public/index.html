@@ -16,6 +16,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
 
     </head>
 
@@ -498,8 +501,9 @@
                                 <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:35px">
                                     </i>&ensp;<a class="w3-text-white" href="mailto:info@devoppsng.com"
                                         target="_top">info@devoppsng.com</a><br></p>
-                                        <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:35px">
-                                            </i>&ensp;<a class="w3-text-white" href="mailto:iidiong30@gmail.com" target="_top">iidiong30@gmail.com</a><br></p>
+                                <p><i class="fa fa-envelope fa-lg" aria-hidden="true" style="width:35px">
+                                    </i>&ensp;<a class="w3-text-white" href="mailto:iidiong30@gmail.com"
+                                        target="_top">iidiong30@gmail.com</a><br></p>
                             </div>
                             <div>
                                 <h3>Hours of Operation:</h3>
@@ -513,27 +517,34 @@
                                     <p>Sunday <span>Closed</span></p>
                                 </div>
                             </div>
-                            <!-- <form class="" action="https://fabform.io/f/YI1xsnp" method="post" enctype="text/plain">
+                           
+                            <form id="contact-form">
+                                <h3 class="w3-text-black">Feedback</h3>
                                 <fieldset>
-                                    <div class="w3-section" id="message">
+                                    <div class="w3-section w3-text-black" id="message">
                                         <label>Name
                                             <input class="w3-input" type="text" required autocomplete="on"
-                                                name="Name"></label>
+                                                name="user_name" placeholder="Your Name"></label>
                                     </div>
-                                    <div class="w3-section">
+                                    <div class="w3-section w3-text-black">
                                         <label>Email
-                                            <input class="w3-input" type="text" required autocomplete="on"
-                                                name="Email"></label>
+                                            <input class="w3-input" type="email" required autocomplete="on"
+                                                name="user_email" placeholder="Your Email"></label>
                                     </div>
-                                    <div class="w3-section w3-text-white">
-                                        <label>Message <textarea rows="2" required name="Message" id="message"
+                                    <div class="w3-section w3-text-black">
+                                        <label>Telephone
+                                            <input class="w3-input" type="tel" required autocomplete="on" name="tel"
+                                                placeholder="Phone Number" ></label>
+                                    </div>
+                                    <div class="w3-section w3-text-black">
+                                        <label>Message <textarea rows="4" required name="message"
+                                                placeholder="Your Message" required
                                                 style="width: 100%"></textarea></label>
                                     </div>
-                                     <button type="submit" class="w3-button w3-teal w3-right">Send</button>  -->
-                            <!-- <button class="w3-button w3-section w3-right w3-black" type="submit">
-                                        <i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
-                                </fieldset> -->
-                            <!-- </form> -->
+
+                                    <button class="w3-button w3-section w3-right w3-black" type="submit">SEND MESSAGE</button>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                     <div class="w3-half w3-container w3-center">
@@ -568,6 +579,14 @@
             </p>
         </footer>
         <script src="/js/myScript.js"></script>
+         <script type="text/javascript">
+            (function(){
+               emailjs.init({
+                 publicKey: "rPPPYWAlw2YlB_Abc",
+               });
+            })();
+         </script>
+
     </body>
 
 </html>
